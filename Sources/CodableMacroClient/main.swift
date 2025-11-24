@@ -15,9 +15,12 @@ let json = """
 }
 """.data(using: .utf8)!
 
+if let user = try? User.rk.decode(from: json) {
+    print("---- user = \(user)")
+}
+
 do {
-    let d = JSONDecoder()
-    let user = try d.decode(User.self, from: json)
+    let user = try User.rk.decode(from: json)
     print("--- user = \(user)")
 } catch {
     print("--- error = \(error)")
