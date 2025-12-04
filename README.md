@@ -17,7 +17,7 @@
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/yourusername/CodableMacro.git", from: "0.1.0")
+    .package(url: "https://github.com/lvzh2012/CodableMacro.git", from: "0.1.0")
 ]
 ```
 
